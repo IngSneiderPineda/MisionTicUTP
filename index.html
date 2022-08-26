@@ -4,60 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title> 
+    <title>Pagina Principal</title>
     <link rel="icon" href="C:\Users\ASUS\Desktop\pruebas_web\recursos\website_web_12218.ico" type="image/ico">
 </head>
-<body>      
+<body>        
     <h1>TIENDA ONLINE</h1>
-    
+
     <div id="MenuNav">
         <a href="file:///C:/Users/ASUS/Desktop/pruebas_web/index.html">Inicio</a>
         <a href="file:///C:/Users/ASUS/Desktop/pruebas_web/index.html">Quienes Somos?</a>
         <a href="file:///C:/Users/ASUS/Desktop/pruebas_web/index.html">Contacto</a>
     </div>
 
-    <p>La tienda virtual está al servicio de la comunidad Pereirana, atendida por sus
+    <p><b>La tienda virtual</b> está al servicio de la comunidad Pereirana, atendida por sus
         propietarios: estudiante1, estudiante2, estudiante3, estudiante4 y estudiante5</p>
+    
     <a href="https://www.utp.edu.co" target="_blank">Visita el sitio de la UTP</a>
     <br>
-    <br> 
-            
-    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\mohammad-metri.jpg" alt="Calzado para dama" width="200" height="160">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\joseph-barrientos.jpg" alt="Calzado deportivo" width="200" height="160">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\camila-damasio.jpg" alt="Calzado para niño" width="200" height="160">
     <br>
+        
+    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\mohammad-metri.jpg" alt="calzado para dama" width="200" height="160">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\joseph-barrientos.jpg" alt="deportivos para hombre" width="200" height="160">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\camila-damasio.jpg" alt="deportivos para niño" width="200" height="160">
     <br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/PZIqV7wNyyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h2>Sección de Calzado</h2>
     <p>En esta sección encontrarás diversidad de calzado para todas las edades,
-        géneros, gustos, tipo, deportes, etc</p>
+        géneros, gustos, tipo, deportes, etc.</p>
 
     <h3>Zapatillas para Hombre</h3>
-    
     <div class="card">
-        <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\revolt.jpg" alt="Calzado para hombre" width="200" height="160">
+        <img src="C:\Users\ASUS\Desktop\pruebas_web\recursos\revolt.jpg" alt="calzado para hombre" width="200" height="160">
         <h4>Nike Running Rojos</h4>
         <p class="valor">$154.999</p>
         <p>Tenis para correr</p>
         <p><button>Adicionar al carro</button></p>
     </div>
-    
     <h3>Calzado para Dama</h3>
-    <h3>Deportivos para Niños</h3>
-    
-    <h3>Beneficios del calzado Deportivo</h3>
+    <h3>Deportivos para Niño</h3>
 
+    <br>
+    <h3>Beneficios del calzado deportivo</h3>
     <ul>
-        <li>Son Cómodos</li>
+        <li>Son comodos</li>
         <li>Combinan con todo tipo de ropa</li>
         <li>No inflaman los pies</li>
     </ul>
-
+    <br>
     <h3>Pasos para elegir tu calzado deportivo:</h3>
-
     <ol>
         <li>Que tipo de actividad vas a realizar?</li>
         <li>Cuanto calzas?</li>
@@ -65,8 +62,8 @@
     </ol>
     <br>
     <br>
-    <table>
-        <caption>Contactos de la tienda por areas</caption>
+    <table border="">
+        <caption>Contactos de la tienda por áreas</caption>
         <tr>
             <th>Áreas de la tienda</th>
             <th>Contacto</th>
@@ -92,10 +89,10 @@
             <td>Estudiante 4</td>
             <td>300 000 03</td>
         </tr>
-    </table>
+    </table>    
 
-    <h2>Sección de Ropa</h2> 
-    
+    <h2>Sección de Ropa</h2>
+
     <dl>
         <dt>Chaquetas WaterProof</dt>
         <dd>- Caracteristica de las chaquetas que son a prueba de agua</dd>
@@ -103,6 +100,24 @@
         <dd>- Caracteristica de las chaquetas respirables</dd>
     </dl>
 
+    <br>
+    <form action="action_page.php" method="get">
+        <label for="nombreCompleto">Nombre Completo</label>
+        <input type="text" name="nombreC" id="nombreC" placeholder="Nombres y apellidos" required>
+        <br>
+        <label for="ZapatoB">Zapato que no encontraste</label>
+        <input type="text" name="zapatoab" id="zapatoab"><br><br>
+        <input type="radio" id="zapatoh" name="tzapato" value="hombre">
+        <label for="male">Hombre</label><br>
+        <input type="radio" id="zapatom" name="tzapato" value="mujer">
+        <label for="female">Mujer</label><br>
+        <input type="radio" id="zapaton" name="tzapato" value="nino">
+        <label for="other">Niño</label><br><br>
+        <input type="submit" value="Solicitar">
+    </form>
+
+    <br>
+    <br>
     <footer>
         <p>Autores:Desarrolladores</p>
         <p><a href="mailto:hege@example.com">hege@example.com</a></p>
