@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina con JavaScript</title>
+    <title>Pagina JavaScript</title>
+    <link rel="icon" href="C:\Users\ASUS\Desktop\pruebas_web\recursos\website_web_12218.ico" type="image/ico">    
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,11 +15,18 @@
 
     <button type="button" onclick="document.getElementById('demo').style.display='none'">Oculta!</button>
     <button type="button" onclick="document.getElementById('demo').style.display='block'">Muestra!</button>
-    <button type="button" onclick="myfunction()">Clic para cambiar párrafo</button>
-    <button type="button" onclick="this.innerHTML= Date()">Da clic para conocer la hora?</button>
+    <button type="button" onclick="MyFunction()">Clic para cambiar el párrafo.</button>
+    <button type="button" onclick="myfunction2()">Mensaje de alerta</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">mostrar la fecha actual!</button>
+    <br>
+    <br>
+    <button type="button" onclick="saludar()">Clic para saludar!</button>
+    <button type="button" onclick="dia()">Clic para saber el día</button>
+    <button type="button" onclick="listar()">Listar productos</button>
+
     <script>
-        myfunction2();
         document.body.appendChild(ul);
-    </script>    
+        document.getElementById('demo').innerHTML = tocelsius(77);
+    </script>
 </body>
 </html>
